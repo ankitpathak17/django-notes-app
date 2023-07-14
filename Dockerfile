@@ -1,11 +1,11 @@
 FROM python:3.9
 
-WORKDIR /app
+WORKDIR /app/backend
 
-COPY requirements.txt /app
+COPY requirements.txt /app/backend
 RUN pip install -r requirements.txt
 
-COPY . /app
+COPY . /app/backend
 
 EXPOSE 8000
 
